@@ -1,0 +1,21 @@
+<div class="row justify-content-md-center">
+  <div class="col-md-7">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        autofocus
+        name="searchWeather"
+        id="searchWeather"
+        #searchWeather
+        class="form-control form-control-lg"
+        placeholder="Digite a cidade..."
+      />
+      <div class="input-group-append">
+        <button class="btn btn-primary btn-lg" type="button" (click)="search()">
+          Pesquisar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-list-weather [search-value]="searchValue"></app-list-weather>

@@ -1,0 +1,17 @@
+<div class="row mt-5 mb-5" *ngFor="let item of weather">
+  <div class="col text-center">
+    <h2 class="text-uppercase weather-title mb-3">{{ item.city }}</h2>
+    <h3 class="text-capitalize mt-1 h3">
+      <b>{{ item.temperature }}°C</b>
+    </h3>
+    <img [src]="item.icon" alt="weather" />
+    <h3 class="text-capitalize mt-1 h5">{{ item.description }}</h3>
+  </div>
+  <div class="col weather-column">
+    <p class="weather-info"><b>Mínima:</b> {{ item.temperatureMinimum }}°C</p>
+    <p class="weather-info"><b>Máxima:</b> {{ item.temperatureMaximum }}°C</p>
+    <p class="weather-info"><b>Umidade:</b> {{ item.humidity }}</p>
+    <p class="weather-info"><b>Nascer do Sol:</b> {{ item.sunrise }}</p>
+    <p class="weather-info"><b>Pôr do Sol:</b> {{ item.sunset }}</p>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.weather-content {
+    box-shadow: 7px 9px 20px 5px #ccc; 
+    border-radius: 30px; 
+    padding: 30px;
+}
+
+.weather-title {
+    color: #479ced;
+    font-weight: bold;
+}
